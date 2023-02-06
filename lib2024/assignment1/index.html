@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--This is where all the metadata information goes-->
+	<meta charset="UTF-8" />
+
+	<title> 
+	&#128526; Assignment One Best Movie Ever
+	</title>
+	<!--Put the comments down here because it showed up in the title when nested between the two tags-->
+	<!--This is not the title on the web page but it shows up on the tab-->
+	<!--TEXT ONLY: no numbers, symbols, or punctuation-->
+	<!--Why do emojis works if it is supposed to be text only? Is it because it is 'contained' as a unit of sorts?-->
+
+</head>
+
+
+<!--Everything that is invisible on the page should go above here, everything that is visible should go below here-->
+<!--Emojis work in the title, heading, and paragraph tags-->
+
+
+<body>
+
+	<h1> Assignment One: The Best Movie Ever &#128253; </h1>
+	<!--Do not repeat: Keep as largest text on the page to indicate role as title-->
+
+		<p> This blog post was created for my first assignment using HTML. All mistakes are my own. </p>
+		<!--Statement not part of assignment requirements, but I like providing context and it gives me space to practice-->
+
+
+	<img src="images/herculesandpegasus.jpeg" alt="Hercules and Pegasus" width="858" height="902">
+
+	<!--Original image dimensions 858x902-->
+	<!--Assignment Instruction: [Insert a Picture] - Implied from example image -->
+
+	<p> <i> Vector Clipart taken from </i> <a href="https://pixy.org/1180379/">https://pixy.org/1180379/ </a> </p>
+
+	<!--Image license: CC BY-NC-ND 4.0 Creative Commons - https://creativecommons.org/licenses/by-nc-nd/4.0/ -->
+
+
+	<h2> My Favourite Movie: Disney's <i>Hercules</i> </h2>
+	<!--Repeat this heading as default main heading for consistency across sections-->
+	<!--W3 schools says to use i element only if others are not more appropriate: is there a better tag?-->
+
+		<p> Disney's <i> Hercules </i> (1997) is an animated re-telling of one of the most famous heroes in Greek mythology. It follows the trials and tribulations of Hercules as he learns about his godly heritage and works to earn his place on Olympus. The catchy music and colourful animations are sure to delight the young and young-at-heart alike. </p>
+
+		<!--Assignment instruction: Write about the movie in three lines.-->
+		<!--Formatting might be nicer if each sentence was its own paragraph tag, revisit-->
+
+	<h2> Cast List </h2>
+
+		<p> Four of the main voice actors in this movie are: </p>
+
+		<ul>
+			<li> Tate Donovan: <i>Hercules</i> </li>
+			<li> Susan Egan: <i> Meg </i>  </li>
+			<li> James Wood: <i> Hades </i>  </li>
+			<li> Danny DeVito: <i> Phil </i> </li>
+
+		</ul>
+
+		<!--Assignment instruction: Add a list-->
+		<!--Cast list information taken from IMDB page for Hercules: https://www.imdb.com/title/tt0119282/-->
+
+	<h2> Funniest Lines from the Movie </h2>
+
+		<h3> Most Iconic One-Liner: </h3>
+
+			<p> <b>Meg:</b> I'm a damsel, I'm in distress, I can handle this. Have a nice day! &#128133;</p>
+
+			<!-- Assignment instruction: Write something-->
+			<!-- b tag usually last resort; used in this case to make text bold without other special emphasis-->
+
+		<h3> Top Quote from IMBD: </h3>
+
+			<p> <b>Hades:</b> I can't believe this guy! I throw everything I've got at him, and it doesn't even...</p>
+
+			<p> <i> [Hades notices Pain is wearing Air-Hercs] </i> </p>
+
+			<p> <b>Hades:</b> What...are...those? </p>
+
+			<p> <b>Pain:</b> Um, I don't know. I-I thought they looked kinda dashing...</p>
+
+			<p> <b>Hades:</b> <i> [slowly burns up] </i> I've got 24 hours to get rid of this...bozo, or the entire scheme I've been setting up for 18 years goes up in smoke, and YOU ARE WEARING HIS MERCHANDISE? </p>
+
+			<p> <i> [Hades hears a noise, and sees Panic slurping some "Herculade"] </i> </p>
+
+			<p> <b> Panic:</b> <i> [chuckles nervously] </i> Thirsty? </p>
+
+			<p> <i> [Hades screams, and blows up a volcano] </i> </p>
+
+			<!--This section mainly for practice: playing around with basic HTML font styles within p tags; how using multiple p tags breaks up lines (compare to movie description, above)-->
+			<!--Also the final deadpan description of Hades blowing up a volcano will never not be funny-->
+			<!--Quotes taken from https://www.imdb.com/title/tt0119282/quotes/qt0431016-->
+
+
+	<h2> Movie Ratings </h2> 
+
+		<p> The bars below indicate the rating by demographic according to the <i> Hercules </i> IMDB page. </p>
+
+		<!-- Ratings taken from https://www.imdb.com/title/tt0119282/ratings/?ref_=tt_ov_rt -->
+
+			<p> <label for="file">All&#11088;: </label>
+				<progress id="file" value="7.3" max="10"> 73% </progress> 
+				(7.3) </p>
+
+				<!--Can adjust the p tags to indicate if you want the progress bar beside or below the label-->
+				<!--P tag helps structure but is unnecessary unless you want added text: progress bar will function without presence -->
+
+				<!--Revisit label name if better idea for closer alignment; this is best so far out of 'all ages' ; 'overall'; and 'total' -->
+
+			<p> <label for="file"> 00-18: </label>
+				<progress id="file" value="7.3" max="10"> 73% </progress>
+				(7.3) </p>
+
+				<!--Put 00- instead of 'Under 18' to help with alignment with subsequent lines-->
+
+
+			<p> <label for="file"> 18-29: </label>
+				<progress id="file" value="7.6" max="10"> 76% </progress>
+				(7.6) </p>
+
+			<p> <label for="file"> 30-44: </label>
+				<progress id="file" value="7.2" max="10"> 72% </progress>
+				(7.2) </p>
+
+			<p> <label for="file"> 45 Up: </label>
+				<progress id="file" value="6.8" max="10"> 68% </progress>
+				(6.8) </p>
+
+		<!--Assignment instruction: [Include progress bar] - Implied from example image -->
+
+	<h2> Schedule a <i> Hercules</i> Watch Party!</h2>
+
+		<p> Disney's <i> Hercules</i> is a fun movie to watch by yourself or with friends! When I was in university, it became a tradition of the Classics Society to watch it <mark> at the beginning of each new semester </mark> to welcome new students and reconnect with friends. </p>
+
+		<!--Assignment instruction: [Include mark tag] - Implied from example image -->
+
+
+	<h5> Webpage Last Updated: February 6, 2023</h5>
+
+	<!--Update this line each day changes are made -->
+
+	<h5> Webpage Last Updated By: J. Cross </h5>
+
+	<!--Assignment Instruction: Sign here with your initials and date -->
+
+
+</body>
+
+</html>
