@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheet.css"> <!--Links to external CSS file-->
+	<script src="javascript.js"></script> <!--Links to external JS file -->
+	<title> Assignment 3: Website </title>
+</head>
+
+
+<body>
+
+
+	<header> <!--This is the top section of the page-->
+
+		<img id="Leprechaun" onclick="alertbox();" src="images/leprechaun.jpg" alt="Cartoon leprechaun face" width=100> <!--Setting width is sufficient; height will automatically adjust-->
+
+		<img id="PotofGold" onclick="golddisappear();" src="images/potofgold.jpg" alt="Pot of Gold" width=100>
+
+
+		<h1 onclick="goldappear();"> RAINBOWS </h1> <!--This is the title of the webpage-->
+
+		<p> Let's Learn About: </p> <!--This is the general content paragraph -->
+
+
+	</header>
+
+
+	<div id="main">
+
+
+		<ul id="navList"> <!--This is the basics for the navigation side panel-->
+
+			<li id="RedNav" onclick="displayInfo(0)">Red</li>
+			<li id="OrangeNav" onclick="displayInfo(1)">Orange</li>
+			<li id="YellowNav" onclick="displayInfo(2)">Yellow</li>
+			<li id="GreenNav" onclick="displayInfo(3)">Green</li>
+			<li id="BlueNav" onclick="displayInfo(4)">Blue</li>
+			<li id="PurpleNav" onclick="displayInfo(5)">Purple</li>
+
+		</ul>
+	
+		<div id="infoContainer"> <!--How to stack divs on top of another to display one at a time-->
+
+			<div id="Red" class="infoDivs"> <!--This is content container for list option 1-->
+				<h2 id="RedTitle">Title for Red</h2> 
+				<p>Text for Red</p>
+			</div>
+
+			<div id="Orange" class="infoDivs"> <!--This is content for list item option 2-->
+				<h2 id="OrangeTitle">Title for Orange</h2> 
+				<p>Text for Orange</p>
+			</div>
+
+			<div id="Yellow" class="infoDivs"> <!--This is content for list item option 3-->
+				<h2 id="YellowTitle">Title for Yellow</h2> 
+				<p>Text for Yellow</p>
+			</div>
+
+			<div id="Green" class="infoDivs"> <!--This is content for list item option 4-->
+				<h2 id="GreenTitle">Title for Green</h2> 
+				<p>Text for Green</p>
+			</div>
+
+			<div id="Blue" class="infoDivs"> <!--This is content for list item option 5-->
+				<h2 id="BlueTitle">Title for Blue</h2> 
+				<p>Text for Blue</p>
+			</div>
+
+			<div id="Purple" class="infoDivs"> <!--This is content for list item option 6-->
+				<h2 id="PurpleTitle">Title for Purple</h2> 
+				<p>Text for Purple</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+</html>
