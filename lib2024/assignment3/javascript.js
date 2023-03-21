@@ -1,12 +1,11 @@
-//Element List:
+//Adopted from IOA Tutorial:
+
 
 	//Get Class Element infoDivs:
 	var infoDivs = document.getElementsByClassName("infoDivs");
 
 
-//Function List:
-
-	//Allow Cycle through Index Options (from IOA):
+	//Allow Cycle through Index Options:
 	function displayInfo(index) {
 
 		//Part one: hide all options (using fun math loop)
@@ -19,6 +18,7 @@
 
 	}
 
+//Personal Contributions:
 
 function alertbox() {
 	alert("Do you want to steal my gold? Click on the rainbow!")

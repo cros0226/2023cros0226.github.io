@@ -11,70 +11,125 @@
 <body>
 
 
-	<header> <!--This is the top section of the page-->
+	<header> 
+	<!--This is the top section of the page-->
 
-		<img id="Leprechaun" onclick="alertbox();" src="images/leprechaun.jpg" alt="Cartoon leprechaun face" width=100> <!--Setting width is sufficient; height will automatically adjust-->
+		<img id="Leprechaun" onclick="alertbox();" src="images/leprechaun.jpg" alt="Cartoon leprechaun face" width=100> 
+			<!--Setting width is sufficient; height will automatically adjust-->
+			<!--Click on this image to make alert pop up on the screen-->
 
 		<img id="PotofGold" onclick="golddisappear();" src="images/potofgold.jpg" alt="Pot of Gold" width=100>
+			<!--Click on this image to make it disappear -->
 
 
 		<h1 onclick="goldappear();"> RAINBOWS </h1> <!--This is the title of the webpage-->
+			<!--Click on text to make the pot of gold appear -->
 
-		<p> Let's Learn About: </p> <!--This is the general content paragraph -->
-
+		<p> <i>Show your true colours! </i> </p> <!--This is the general content paragraph -->
 
 	</header>
 
 
+
+
 	<div id="main">
+	<!--This is the main body of the page-->
 
-
-		<ul id="navList"> <!--This is the basics for the navigation side panel-->
-
+		<ul id="navList"> 
+		<!--This is the basics for the navigation side panel-->
+		<!--onclick commands adopted from IOA Tutorial-->
 			<li id="RedNav" onclick="displayInfo(0)">Red</li>
 			<li id="OrangeNav" onclick="displayInfo(1)">Orange</li>
 			<li id="YellowNav" onclick="displayInfo(2)">Yellow</li>
 			<li id="GreenNav" onclick="displayInfo(3)">Green</li>
 			<li id="BlueNav" onclick="displayInfo(4)">Blue</li>
 			<li id="PurpleNav" onclick="displayInfo(5)">Purple</li>
-
 		</ul>
 	
-		<div id="infoContainer"> <!--How to stack divs on top of another to display one at a time-->
+		<div id="infoContainer"> 
+		<!--Collection of divs adapted from IOA Tutorial (how to stack) -->
+		<!--All colour meanings were taken from first google results "What does x symbolize": -->
 
-			<div id="Red" class="infoDivs"> <!--This is content container for list option 1-->
-				<h2 id="RedTitle">Title for Red</h2> 
-				<p>Text for Red</p>
+			<div id="Red" class="infoDivs">
+			<!--This is content for navList item 0-->
+				<h2> <span class="Red"> What Does <i>Red</i> Represent? </span> </h2> 
+				<p> The colour <span class="Red"> <i> RED </i> </span> can represent:
+					<ul> 
+						<li>Courage</li>
+						<li>Danger</li>
+						<li>Sacrifice</li>
+					</ul>
+				</p>
 			</div>
 
-			<div id="Orange" class="infoDivs"> <!--This is content for list item option 2-->
-				<h2 id="OrangeTitle">Title for Orange</h2> 
-				<p>Text for Orange</p>
+
+			<div id="Orange" class="infoDivs">
+			<!--This is content for navList item 1-->
+				<h2> <span class="Orange"> What Does <i>Orange</i> Represent? </span> </h2> 
+				<p> The colour <span class="Orange"> <i> ORANGE </i> </span> can represent:
+					<ul> 
+						<li>Energy</li>
+						<li>Optimism</li>
+					</ul>
+				</p>
 			</div>
 
-			<div id="Yellow" class="infoDivs"> <!--This is content for list item option 3-->
-				<h2 id="YellowTitle">Title for Yellow</h2> 
-				<p>Text for Yellow</p>
+
+			<div id="Yellow" class="infoDivs">
+			<!--This is content for navList item 2-->
+				<h2> <span class="Yellow"> What Does <i>Yellow</i> Represent? </span> </h2> 
+				<p> The colour <span class="Yellow"> <i> YELLOW </i> </span> can represent:
+					<ul> 
+						<li>Happiness </li>
+						<li>Hope</li>
+						<li>Spontaneity</li>
+					</ul>
+				</p>
 			</div>
 
-			<div id="Green" class="infoDivs"> <!--This is content for list item option 4-->
-				<h2 id="GreenTitle">Title for Green</h2> 
-				<p>Text for Green</p>
+
+			<div id="Green" class="infoDivs">
+			<!--This is content for navList item 3-->
+				<h2> <span class="Green"> What Does <i>Green</i> Represent? </span> </h2> 
+				<p> The colour <span class="Green"> <i> GREEN </i> </span> can represent:
+					<ul> 
+						<li>Growth</li>
+						<li>New Beginnings</li>
+					</ul>
+				</p>
 			</div>
 
-			<div id="Blue" class="infoDivs"> <!--This is content for list item option 5-->
-				<h2 id="BlueTitle">Title for Blue</h2> 
-				<p>Text for Blue</p>
+
+			<div id="Blue" class="infoDivs">
+			<!--This is content for navList item 4-->
+				<h2> <span class="Blue"> What Does <i>Blue</i> Represent? </span> </h2> 
+				<p> The colour <span class="Blue"> <i> BLUE </i> </span> can represent:
+					<ul> 
+						<li>Calmness</li>
+						<li>Responsibility</li>
+					</ul>
+				</p>
 			</div>
 
-			<div id="Purple" class="infoDivs"> <!--This is content for list item option 6-->
-				<h2 id="PurpleTitle">Title for Purple</h2> 
-				<p>Text for Purple</p>
+
+			<div id="Purple" class="infoDivs">
+			<!--This is content for navList item 5-->
+				<h2> <span class="Purple"> What Does <i>Purple</i> Represent? </span> </h2> 
+				<p> The colour <span class="Purple"> <i> PURPLE </i> </span>can represent:
+					<ul> 
+						<li>Ambition</li>
+						<li>Luxury</li>
+						<li>Nobility</li>
+					</ul>
+				</p>
 			</div>
+
 
 		</div>
+		<!--This is the end of infoContainer Div-->
 
 	</div>
+	<!--This is the end of the Main Div-->
 
 
 </body>
