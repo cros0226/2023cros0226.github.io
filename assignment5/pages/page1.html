@@ -1,0 +1,54 @@
+<!--This is the first page: "Portal" to original and styled versions of assignment 1 (internal webpages) -->
+<!--Need to include: button to access page 2 and 2a (not visible in nav menu) -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/page1.css"> <!--Links to page-specific stylesheet-->
+    <script src="../javascript5.js"></script>  <!--Links to site-wide external javascript -->
+    <title>Disney</title>
+  </head>
+
+
+  <body>
+
+
+    <header>
+
+      <nav> <!-- Navigation panel adapted from: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar -->
+        <div class="navtitle">
+         <h4>Herakles <span class="emphasis"> | </span> &#905;&#929;&#913;&#922;&#923;&#919;&#931; <span class="emphasis"> | </span> Hercules </h4>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li> <!--Need to add ../ because index stored at a different level; adjust depending on settings-->
+          <li><a class= "active" href="page1.html">Disney</a></li>
+          <li><a href="page3.html">Family</a></li>
+          <li><a href="page4.html">Labours</a></li>
+        </ul>
+      </nav>
+
+      <h1> The Best Movie Ever: Disney's <i> Hercules </i> </h1>
+
+    </header>
+
+
+    <div id= "textcontainer-content"> <!--This div contains body text (not page heading)-->
+      <p> The first assignment for our Internet Applications Class (HTML/CSS/JS) was to use basic HTML to create a blog post for the 'Best Movie Ever'. This was my first attempt at any form of coding, and I was very excited to see how my text file translated into a simple webpage. Although I used a variety of HTML tags to achieve limited styling effects, I thought it would be interesting to see how I could style the same components with CSS. Click the buttons below to see the differences! </p>
+    </div>
+
+
+    <div id="buttoncontainer"> <!--This div contains both buttons-->
+      <a href="page2.html" class="button"> Original Assignment </a> <!--Links styled as buttons rather than using 'button' tag-->
+      <a href="page2a.html" class="button"> Styled Assignment </a>
+    </div>
+
+
+  </body>
+
+</html>
+

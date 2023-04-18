@@ -1,0 +1,174 @@
+<!-- This is Page 2a: CSS Styled Assignment 1 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/page2a.css"> <!--Links to page-specific stylesheet-->
+    <script src="../javascript5.js"></script> <!--Links to site-wide external javascript -->
+    <title>Disney - New</title>
+  </head>
+
+
+  <body>
+
+
+  <header>
+    <div id="buttoncontainer"> <!-- Need to include access buttons (page not included in nav menu)-->
+      <a href="page2.html" class="button"> Original Assignment </a>
+      <a href="page1.html" class="button"> Return to Site </a> 
+    </div>
+    <h1> Assignment One: The Best Movie Ever <span onclick="watchparty();"> &#128253; </span> </h1> <!--"Easter Egg" for anyone curious to try and click on titles-->
+    <p id='subtitle'> <i> This blog post was created for my first assignment using HTML. All mistakes are my own.</i> </p>
+  </header>
+
+
+
+  <!-- Div attributes adapted from: https://www.educative.io/answers/how-to-make-side-by-side-divs-in-html (width/float)-->
+
+
+  <div class="row" style="width:100%;"> <!--This contains multiple divs, laid out side-by-side in the top row-->
+
+    <div id="pic" class="polaroid" style="width: 48%; float:left"> <!--This should limit the section to left half of the screen-->
+      <img src="hercules.jpg" alt="Hercules and Pegasus" style="width:100%">
+      <div class="container">
+        <p> <i>Original Vector ClipArt </i> </p>
+        <a href="https://pixy.org/1180379/" class="btn" style="vertical-align:middle"> <span>Here</span></a> 
+        <!--Validity of external link last checked 17/04/23-->
+        <!--Image license: CC BY-NC-ND 4.0 Creative Commons - https://creativecommons.org/licenses/by-nc-nd/4.0/ -->
+      </div>
+    </div>
+
+
+    <div style="width: 48%; float:right"> <!--This should limit following to right half of screen-->
+
+      <div class="textcontainer">
+        <h2 class="heading1option"> My Favourite Movie: Disney's <i>Hercules</i> </h2>
+        <p> Disney's <i> Hercules </i> (1997) is an animated re-telling of one of the most famous heroes in Greek mythology. It follows the trials and tribulations of Hercules as he learns about his godly heritage and works to earn his place on Olympus. The catchy music and colourful animations are sure to delight the young and young-at-heart alike. </p>
+      </div>
+
+
+      <!-- Original html style tags (e.g., <i> and <b>) retained since they were already there and functional. Preferred option would be to use <span> tags with CSS -->
+
+
+      <div class="textcontainer"> <!--This Div contains the Funniest Lines -->
+        <h2 class="heading1option"> Funniest Lines from the Movie </h2>
+        <h3 class="heading2option"> Most Iconic One-Liner: </h3>
+        <p> <b>Meg:</b> I'm a damsel, I'm in distress, I can handle this. Have a nice day! &#128133;</p>
+
+        <h3 class="heading2option"> Top Quote from IMBD: </h3>
+        <p> <b>Hades:</b> I can't believe this guy! I throw everything I've got at him, and it doesn't even...</p>
+        <p> <i> [Hades notices Pain is wearing Air-Hercs] </i> </p>
+        <p> <b>Hades:</b> What...are...those? </p>
+        <p> <b>Pain:</b> Um, I don't know. I-I thought they looked kinda dashing...</p>
+        <p> <b>Hades:</b> <i> [slowly burns up] </i> I've got 24 hours to get rid of this...bozo, or the entire scheme I've been setting up for 18 years goes up in smoke, and YOU ARE WEARING HIS MERCHANDISE? </p>
+        <p> <i> [Hades hears a noise, and sees Panic slurping some "Herculade"] </i> </p>
+        <p> <b> Panic:</b> <i> [chuckles nervously] </i> Thirsty? </p>
+        <p> <i> [Hades screams, and blows up a volcano] </i> </p>
+        <!--Quotes taken from https://www.imdb.com/title/tt0119282/quotes/qt0431016-->
+      </div> <!--This Div contains the Funniest Lines-->
+
+      <div class="textcontainer"> <!--This Div contains all the Cast information -->
+
+        <h2 class="heading1option"> Cast List </h2>
+          <p> Four of the main voice actors in this movie are: </p>
+
+        <div style="overflow-x: auto;"> <!--This Div styles the table-->
+          <table>
+            <tr>
+              <th class="heading2option">Actor/Actress</th>
+              <th class="heading2option">Character Name</th>
+            </tr>
+            <tr>
+              <td>Tate Donovan</td>
+              <td><i>Hercules</i></td>
+            </tr>
+            <tr>
+              <td>Susan Egan</td>
+              <td><i>Meg</i></td>
+              </tr>
+            <tr>
+              <td>James Wood</td>
+              <td><i>Hades</i></td>
+            </tr>
+            <tr>
+              <td>Danny DeVito</td>
+              <td><i>Phil</i></td>
+            </tr>
+          </table>
+        </div> <!--This Div styles the table-->
+      </div> <!--This Div contains all the Cast information-->
+
+      <div class="textcontainer"> <!--This Div contains Movie Ratings-->
+        
+        <h2 class="heading1option"> Movie Ratings </h2> 
+        <p> The bars below indicate the rating by demographic according to the <i> Hercules </i> IMDB page. </p>
+        <!-- Ratings taken from https://www.imdb.com/title/tt0119282/ratings/?ref_=tt_ov_rt -->
+
+        <!--Divs adapted from: https://codepen.io/toddscottik/pen/gOpqapg -->
+
+        <div id="ratings"> <!--This Div contains progress "bars"-->
+
+          <div class="indicator">
+            <p>0-18</p>
+            <div>
+              <span>73%</span>
+              <div class="centr over50 p73">
+                <div class="value-bar"></div>
+                <div class="left-half"></div>
+              </div>
+              <div class="centrV"></div>
+            </div>
+          </div>
+
+
+          <div class="indicator">
+            <p>18-29</p>
+            <div>
+              <span>76%</span>
+              <div class="centr over50 p76">
+                <div class="value-bar"></div>
+                <div class="left-half"></div>
+              </div>
+              <div class="centrV"></div>
+            </div>
+          </div>
+
+          <div class="indicator">
+            <p>30-44</p>
+            <div>
+              <span>76%</span>
+              <div class="centr over50 p76">
+                <div class="value-bar"></div>
+                <div class="left-half"></div>
+              </div>
+              <div class="centrV"></div>
+            </div>
+          </div>
+
+          <div class="indicator">
+            <p>45+</p>
+            <div>
+              <span>72%</span>
+              <div class="centr over50 p72">
+                <div class="value-bar"></div>
+                <div class="left-half"></div>
+              </div>
+              <div class="centrV"></div>
+            </div>
+          </div>
+        </div> <!--This Div contains progress "bars"-->
+      </div> <!--This Div contains Movie Ratings-->
+    </div> <!--This should limit following to right half of screen-->
+  </div> <!--This contains multiple divs, laid out side-by-side in the top row-->
+
+  <h5> Webpage Last Updated: April 16, 2023 by J. Cross</h5>
+
+  
+
+  </body>
+
+</html>

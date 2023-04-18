@@ -1,0 +1,194 @@
+/* Nav Bar Style adapted from https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar */
+/*See index.css for applicable comments for duplicated code */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh; /*Adjusts height of the box*/
+  background-color: teal;
+}
+
+.navtitle {   /*Changed from .heading in original code (only want to affect navbar)*/
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.emphasis {   /*Added this to distinguish | from being mistaken as letters*/
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 20px;
+  justify-content: right;
+  width: 60%; 
+
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px; /*Affects area that is highlighted/coloured in hover/active (below)*/
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+.nav-links li a.active {
+  background-color: #4caf50;
+}
+
+
+
+
+/*Adapted from Assignment 3*/
+
+
+html, body {
+  width: 100%;
+  height: 100%; 
+  font-family: "Georgia";
+}
+
+
+h1 { /*Only affects the title of the page*/
+  font-size: 35px;
+  margin-top:20px;
+  margin-left:20px;
+}
+
+
+h2 { /*Affects all container titles; What Does x Represent?*/
+  font-size:30px;
+}
+
+
+header p {
+  margin-top: 40px; /*moves paragraph away from title; basically line spacing*/
+}
+
+#subtitle {
+  margin-left:20px;
+}
+
+#main {
+  position:relative; /*section of page adjusts in response to resizing*/
+  height:80%; /*how spaced out content is on the page*/
+}
+
+
+#navList {
+  list-style:none; /*gets rid of the bullet points*/
+  display: inline-block; /*Tip from IOA Tutorial: forces shift in block element; visually moves everything over to right*/
+  height: 75%; /*of parent not full page*/
+  padding: 0px;
+  margin-top: 78px;
+  margin-left: 20px;
+  width: 25%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#navList li { /*selects all list elements within the list*/
+  height: 15%; /* Tip from IOA Tutorial: ideally would be 20 (five elements equally split but visuals better with adjustment*/
+
+
+}
+
+#navList li:hover {
+  background-color: lightseagreen ;
+  color: white;
+}
+
+
+#infoContainer {
+  position: absolute; /*specifies exact area*/
+  display: inline-block; /*Tip from IOA Tutorial: forces shift in block element; visually moves everything beside navList*/
+
+  /*Following commands set restriction of container's relative position on the screen regardless of resizing windows*/
+
+  top: 10%;
+  bottom: 15%; 
+  right: 15%; 
+  left: 25%; /*Match value to width of navList above to keep items aligned*/
+
+  /*Following commands set size of actual container*/
+  height: 68%;
+
+  /*Following commands detail content within the area*/
+
+  margin-left: 20px; /*affects placement of text*/
+  background-color: rgb(0,128,128,0.2); /*get colour from rgb first three numbers; 0.2 gives an opaque effect*/
+
+  /*Add in further edits to this section: Is there a way to set a max/min for people to resize?*/
+}
+
+.infoDivs {
+  display: none;
+
+}
+
+
+
+
+/*Personal Additions*/
+
+.infoDivs h2 {
+  color: white;
+  background-color: teal;
+  padding: 10px;
+  margin-top: 75px;
+  margin-bottom: 10px;
+  text-align: center;
+  word-wrap: break-word; /*contains text within specified area */
+
+}
+
+
+.infoDivs p {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  background-color:#4caf50;
+  color: white;
+  padding: 8px;
+
+}
+
+
+#subtitle {
+  font-size: 23px;
+}
+
+.emphasis1 {
+  color: lightseagreen;
+}
+
+.emphasis2 {
+  font-style: italic;
+}
+
+
+

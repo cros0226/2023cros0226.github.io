@@ -1,0 +1,162 @@
+<!--This is the third page: Hercules' Family-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/page3.css"> <!--Links to page-specific stylesheet-->
+    <script src="../javascript5.js"></script>  <!--Links to site-wide external javascript -->
+    <title>Family</title>
+  </head>
+
+
+  <body>
+
+
+<!-- Navigation panel adapted from: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar -->
+
+  <header>
+
+    <nav>
+
+      <div class="navtitle">
+        <h4>Herakles <span class="emphasis"> | </span> &#905;&#929;&#913;&#922;&#923;&#919;&#931; <span class="emphasis"> | </span> Hercules </h4>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="page1.html">Disney</a></li>
+        <li><a class="active" href="page3.html">Family</a></li>
+		    <li><a href="page4.html">Labours</a></li>
+      </ul>
+
+    </nav>
+
+    <h1> Female Figures in the Family </h1> <!--This is the title of the webpage-->
+
+    <p id='subtitle'> <i> Click on each name below to read about some of the noteworthy women in Hercules' life! </i> </p> <!--This is the general content paragraph -->
+
+
+  </header>
+
+  <div id="main">
+  <!--This is the main body of the page-->
+
+    <ul id="navList"> 
+    <!--This is the basics for the navigation side panel-->
+    <!--onclick command (displayinfo) adopted from IOA Tutorial-->
+    <!--Added second function (byetree) myself -->
+      <li onclick="displayInfo(0);byetree();">Alcmene</li>
+      <li onclick="displayInfo(1);byetree();">Deianira</li>
+      <li onclick="displayInfo(2);byetree();">Hebe</li>
+      <li onclick="displayInfo(3);byetree();">Hera</li>
+      <li onclick="displayInfo(4);byetree();">Megara</li>
+      <li onclick="displayInfo(5);byetree();">Omphale</li>
+    </ul>
+  
+    <div id="infoContainer"> 
+    <!--Collection of divs adapted from IOA Tutorial (how to stack) -->
+
+     <img id="tree" src="heraclesfamilytree.jpg" alt="Mind Map of Hercules' Family Tree" width=100%>
+     <!--Image taken from: https://en.wikipedia.org/wiki/Heracles-->
+   
+      <div id="Mom" class="infoDivs">
+      <!--This is content for navList item 0-->
+        <h2> Who's Your Mama?</h2> 
+        <p> There are several different accounts surrounding the circumstances of Hercules' birth. </p> 
+        <p>Here's what a few of the major Greek poets and playwrights thought:</p>
+          <ul> 
+            <li><span class="emphasis1">Homer:</span> Zeus announced that his child would be born on a specific day and become ruler. Hera prevented Heracles' birth in favour of delivering Eurystheus early, thus fulfilling Zeus' oath.</li> <!--Add in span elements--> <!--Add in links to wikipedia pages-->
+            <li><span class="emphasis1">Ovid: </span> <a href= "https://en.wikipedia.org/wiki/Alcmene"> Alcmene </a> begged the goddess of childbirth for help in delivering Hercules, but instead she followed Hera's orders to prevent the birth. Galanthis tricked the goddess into allowing Hercules' birth, and was turned into a weasel for her troubles. </li>
+            <li><span class="emphasis1"> Pausanius: </span> Hera sent witches to prevent Hercules' birth, but the daughter of Historis deceived them, allowing Alcmene to deliver the baby.</li>
+            <li> <span class="emphasis1">Plautus:</span> Alcmene prays to Zeus for a pain-free childbirth, and Hercules is born without help after a bout of thunder and lightening.</li>
+          </ul>
+      </div>
+
+      <!--Above info taken from: https://en.wikipedia.org/wiki/Alcmene-->
+
+
+      <div id="Deianira" class="infoDivs">
+      <!--This is content for navList item 1-->
+        <h2> Conquered and Conquerer</h2> 
+        <p> <a href = "https://en.wikipedia.org/wiki/Deianira">Deianira</a> was one of Hercules' many partners. Famous stories featuring her include:</p>
+          <ul> 
+            <li>Marrying Hercules after he defeated the river god Achelous in a wrestling contest</li>
+            <li>Marrying Hercules after he assaulted her, disappeared, and then killed her other suitor Eurytion</li>
+            <li>Killing Hercules accidentally by being tricked into poisoning him instead of ensuring his faithfulness
+          </ul>
+      </div>
+
+      <!--Above info taken from: https://en.wikipedia.org/wiki/Deianira-->
+
+
+      <div id="Hebe" class="infoDivs">
+      <!--This is content for navList item 2-->
+        <h2> Heebie-Jeebies! </h2> 
+        <p> <a href = "https://en.wikipedia.org/wiki/Hebe_(mythology)#Marriage">Hebe</a> is the divine daughter of Zeus and Hera, and Hercules' half-sister...and wife. She is recognized as the:</p>
+          <ul> 
+            <li>Goddess of Youth</li>
+            <li>Cupbearer of the Gods</li>
+            <li>Patron of Brides</li>
+          </ul>
+      </div>
+
+      <!--Above info taken from:https://en.wikipedia.org/wiki/Hebe_(mythology)#Marriage-->
+
+
+      <div id="Hera" class="infoDivs">
+      <!--This is content for navList item 3-->
+        <h2> The OG Evil Stepmom! </h2> 
+        <p> Herakles means "Glory of Hera" and was given as a name to Zeus' son in an attempt to pacify <a href = "https://en.wikipedia.org/wiki/Hera#Heracles">Hera</a>. However, Hercules was hounded by Hera his whole life, including: </p>
+          <ul> 
+            <li>Two serpents sent to his cot when he was a baby</li>
+            <li>Driven to madness and murdering his family</li>
+            <li>Undermining his progress in the Labours</li>
+          </ul>
+      </div>
+
+      <!--Above info taken from https://en.wikipedia.org/wiki/Hera#Heracles-->
+
+
+      <div id="Megara" class="infoDivs">
+      <!--This is content for navList item 4-->
+        <h2> "My friends call me Meg" </h2> 
+        <p> <a href = "https://en.wikipedia.org/wiki/Megara_(wife_of_Heracles)">Megara</a> was a Theban princess and wife of Hercules. Sources do not agree on many details of her life, including:</p>
+          <ul> 
+            <li>How many children she had with Hercules</li>
+            <li>Whether she was killed alongside her children when Hercules was driven mad</li>
+            <li>Whether she was killed by Hercules before or after the Labours</li>
+          </ul>
+      </div>
+
+      <!--Above info taken from: https://en.wikipedia.org/wiki/Megara_(wife_of_Heracles)-->
+
+
+
+      <div id="Omphale" class="infoDivs">
+      <!--This is content for navList item 5-->
+        <h2> Role Reversal!</h2> 
+        <p> <a href = "https://en.wikipedia.org/wiki/Omphale#Heracles_and_Omphale">Omphale</a> was another of Hercules' wives, but he began as her slave as punishment for "inadvertent murder". Most details about Omphale come from Hellenistic Greece and Rome rather than Classical Greece, and include:</p>
+          <ul> 
+            <li>Omphale freeing Hercules and taking him as her husband</li>
+            <li>Omphale wearing the Nemean Lion skin while Hercules wore women's clothing</li>
+            <li>Pan mistaking Hercules for Omphale and getting caught while attempting to assault "her"</li>
+          </ul>
+      </div>
+
+      <!--Above info taken from: https://en.wikipedia.org/wiki/Omphale#Heracles_and_Omphale-->
+
+
+    </div>
+    <!--This is the end of infoContainer Div-->
+
+  </div>
+  <!--This is the end of the Main Div-->
+
+
+  </body>
+
+</html>

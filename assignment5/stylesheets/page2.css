@@ -1,0 +1,32 @@
+/*Adapted from W3 Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3*/
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;   
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #4caf50}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+/*Adapted from https://coder-coder.com/how-to-center-button-with-html-css*/
+
+#buttoncontainer {
+  float:right;
+}
+

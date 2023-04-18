@@ -1,0 +1,57 @@
+/* Nav Bar Style adapted from https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar */
+/*See index.css for applicable comments for duplicated code */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  font-family: "Georgia";
+}
+
+.navtitle {                                                                             
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+
+.emphasis {         
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-left: 200px;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px; 
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+.nav-links li a.active {
+  background-color: #4caf50;
+}

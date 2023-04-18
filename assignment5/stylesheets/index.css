@@ -1,0 +1,230 @@
+/* Nav Bar Style adapted from https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar */
+/*Comments from this section likewise applicable to duplicate code in other style sheets unless otherwise noted*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Georgia;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh; /*Adjusts height of the box*/
+  background-color: teal;
+}
+
+.navtitle {   /*Changed class from original code (only want to affect navbar)*/
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.emphasis {   /*Added this to distinguish | from being mistaken as letters*/
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.nav-links {
+  display: flex;
+  margin-right: 20px;
+  justify-content: right;
+  width: 60%; 
+
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px; /*Affects area that is highlighted/coloured in hover/active*/
+}
+
+.nav-links a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+
+.nav-links li a.active {
+  background-color: #4caf50;
+}
+
+
+
+
+/*Hercules Animation: adapted from https://codepen.io/alvarotrigo/pen/PoKMyzO*/
+
+.content {  /*Changed this part to center it on the page*/
+  position: relative;
+  display:inline-block;
+  left: 50%;
+  margin-top: 200px;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+
+
+
+/*Muses (Image) Styling: Personal Coding*/
+
+
+#muses {
+  position: relative;
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display:none; /*hides image until appearance prompted by function*/
+}
+
+
+
+/*Speech Bubbles & Text: adapted from https://www.w3resource.com/html-css-exercise/speech-bubble-answer.php*/
+
+#textcontainer1 {   /*Added this for positioning*/
+ position: relative;
+ margin-left: 30%;
+ margin-top: 10%;
+ display: none;
+}
+
+.textcontainer2 {   /*Added this for positioning*/
+ position: absolute;
+ margin-left: 30%;
+ margin-top: 10%;
+ display: inline-block;
+ display: none;
+}
+
+.quotes p {   /*Condensed this to avoid repeats*/
+  color:white;
+  padding: 20px;
+  font-size: 20px;
+
+}
+
+
+#speech-bubble1 {
+   width: 350px; 
+   height: 300px; 
+   background: #03a9f4; /*Changed colour to match */
+   position: absolute;
+   left:100px;
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border-radius: 30px;
+   word-wrap: break-word; /*Added this to constrain text*/
+    ;
+}
+
+
+#speech-bubble4 {
+   width: 350px; 
+   height: 100px; 
+   background: #03a9f4; /*Changed colour to match */
+   position: absolute;
+   left:100px;
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border-radius: 30px;
+   word-wrap: break-word; /*Added this to constrain text*/
+    ;
+}
+#speech-bubble4:before {
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #03a9f4;
+   border-bottom: 13px solid transparent;
+   margin: 30px 0 0 -25px;   /*This part positions the triangle part */
+}
+
+
+.smallbubble { /*Condensed this to avoid repeats*/
+   width: 350px; 
+   height: 75px; 
+   background: #03a9f4; /*Changed colour to match */
+   position: absolute;
+   left:100px;
+   -moz-border-radius: 10px; 
+   -webkit-border-radius: 10px; 
+   border-radius: 25px;
+   word-wrap: break-word;
+    ;
+}
+
+.smallbubble:before { /*Condensed this to avoid repeats*/
+   content:"";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #03a9f4;
+   border-bottom: 13px solid transparent;
+   margin: 20px 0 0 -25px;   /*This part positions the triangle part */
+}
+
+
+
+
+
+
+
+

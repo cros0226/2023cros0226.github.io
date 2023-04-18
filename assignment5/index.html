@@ -1,0 +1,80 @@
+<!--This is the homepage-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Standard addition-->
+    <link rel="stylesheet" href="stylesheets/index.css"> <!--Links to external stylesheet-->
+    <script src="javascript5.js"></script> <!--Links to external javascript -->
+    <title>Home</title>
+  </head>
+
+
+  <body>
+
+    <nav> <!-- Navigation panel adapted from: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar -->
+      <div class="navtitle">
+        <h4>Herakles <span class="emphasis"> | </span> &#905;&#929;&#913;&#922;&#923;&#919;&#931; <span class="emphasis"> | </span> Hercules </h4>
+      </div>
+      <!--String of numbers is UTF codes for Greek alphabet, spelling transliteration of Herakles-->
+
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="pages/page1.html">Disney</a></li>
+        <li><a href="pages/page3.html">Family</a></li>
+		    <li><a href="pages/page4.html">Labours</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="content" onclick="introappear(); this.onclick=null;"> 
+    <!--https://codepen.io/alvarotrigo/pen/PoKMyzO--> 
+    <!-- on click from https://stackoverflow.com/questions/38781349/how-to-make-onclick-event-to-work-only-once-->
+      <h2>Hercules</h2>
+      <h2>Hercules</h2>
+    </div>
+
+
+    <div class="quotes"> <!--This div contains all text/speech bubbles -->
+    <!--Text for movie quotes taken from: https://www.imdb.com/title/tt0119282/characters/nm0478447-->
+
+      <div id="textcontainer1" onclick="musesappear();"> <!--This div contains intro text and bubble-->
+        <div id="speech-bubble1">
+          <p> Long ago, in the faraway land of ancient Greece, there was a golden age of powerful gods and extraordinary heroes. And the greatest and strongest of all these heroes was the mighty Hercules. But what is the measure of a true hero? </p> 
+          <p> Ah, that is what our story is... </p> <!--Create a break between lines-->
+        </div>
+      </div> <!--This div contains intro text and bubble-->
+
+
+      <div id="speech1" class="textcontainer2" onclick = "speech2appear();"> <!--This div contains first quote and bubble-->
+        <div id="speech-bubble4">
+          <p> Thalia : Will you listen to him? He's makin' the story sound like some Greek tragedy. </p>
+        </div>
+      </div> <!--This div contains first quote and bubble-->
+
+
+      <div id="speech2" class="textcontainer2" onclick = "speech3appear();"> <!--This div contains second quote and bubble-->
+        <div id="speech-bubble3" class="smallbubble">
+          <p> Terpsichore : Lighten up, dude.</p>
+        </div>
+      </div> <!--This div contains second quote and bubble-->
+
+    
+      <div id="speech3" class="textcontainer2" onclick = "musesdisappear();"> <!--This div contains third quote and bubble-->
+        <div id="speech-bubble2" class="smallbubble">
+          <p> Calliope : We'll take it from here, darling. </p>
+        </div>
+      </div> <!--This div contains third quote and bubble-->
+
+    </div> <!--This div contains all text/speech bubbles-->
+
+
+    <img id="muses" onclick="speech1appear();"src="images/muses.jpg" alt="Muses from Disney's Hercules" width=30%>
+    <!--Picture taken from: https://www.nicepng.com/ourpic/u2q8o0u2e6y3w7r5_hercules-gods-and-muses-clip-art-muses-hercules/-->
+
+  </body>
+
+</html>

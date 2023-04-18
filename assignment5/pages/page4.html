@@ -1,0 +1,131 @@
+<!--This is the Fourth Page: Hercules' Labours-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../stylesheets/page4.css"> <!--Links to page-specific stylesheet-->
+    <script src="../javascript5.js"></script> <!--Links to site-wide external javascript -->
+    <title>Labours</title>
+  </head>
+
+
+
+  <body>
+
+
+
+  <header>
+
+    <nav> <!-- Navigation panel adapted from: https://www.simplilearn.com/tutorials/html-tutorial/html-navigation-bar -->
+
+      <div class="navtitle">
+        <h4>Herakles <span class="emphasis"> | </span> &#905;&#929;&#913;&#922;&#923;&#919;&#931; <span class="emphasis"> | </span> Hercules </h4>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="page1.html">Disney</a></li>
+        <li><a href="page3.html">Family</a></li>
+		    <li><a class="active" href="page4.html">Labours</a></li>
+      </ul>
+
+    </nav>
+
+    <h1> <a href="https://en.wikipedia.org/wiki/Labours_of_Hercules#First:_Nemean_lion">Labours</a> </h1> <!--This is the title of the webpage-->
+    <p id='subtitle'> <i> Click on the labours below for a brief overview of some of the tasks Hercules had to complete! </i> </p>
+
+  </header>
+
+
+
+  <div id="main">
+  <!--This is the main body of the page-->
+
+    <ul id="navList"> 
+    <!--This is the basics for the navigation side panel-->
+    <!--onclick commands adopted from IOA Tutorial-->
+    <!--Added second function (bye labours) myself-->
+      <li onclick="displayInfo(0);byelabours();">Labours 1 & 2</li>
+      <li onclick="displayInfo(1);byelabours();">Labours 3 & 4</li>
+      <li onclick="displayInfo(2);byelabours();">Labours 5 & 6</li>
+      <li onclick="displayInfo(3);byelabours();">Labours 7 & 8</li>
+      <li onclick="displayInfo(4);byelabours();">Labours 9 & 10</li>
+      <li onclick="displayInfo(5);byelabours();">Labours 11 & 12</li>
+    </ul>
+  
+    <div id="infoContainer"> 
+    <!--Collection of divs adapted from IOA Tutorial (how to stack) -->
+
+    <img id="labours" src="labours.jpeg" alt="Mosaic of Labours of Hercules" width=100%>
+    <!--Image taken from:https://commons.wikimedia.org/wiki/File:Mosaic_with_the_Labors_of_Hercules,_3rd_century_AD,_found_in_Lliria_%28Valencia%29,_National_Archaeological_Museum_of_Spain,_Madrid_%2815457108142%29.jpg-->
+
+      <div id="12" class="infoDivs">
+      <!--This is content for navList item 0-->
+        <h2> <span class="emphasis1">Labour 1:</span> <span class="emphasis2">Nemean Lion</span></h2> 
+        <p> Kill the animal with impenetrable fur.</p>
+        <h2> <span class="emphasis1">Labour 2:</span> <span class="emphasis2">Lernaean Hydra</span></h2> 
+        <p> Kill the animal that regenerates heads.</p>
+       
+      </div>
+
+
+      <div id="34" class="infoDivs">
+      <!--This is content for navList item 1-->
+        <h2> <span class="emphasis1">Labour 3:</span> <span class="emphasis2">Ceryneian Hind</span></h2> 
+        <p> Capture the animal that's faster than an arrow.</p>
+        <h2> <span class="emphasis1">Labour 4:</span> <span class="emphasis2">Erymanthian Boar</span></h2> 
+        <p> Capture the animal by trapping it in snow.</p>
+      </div>
+
+
+      <div id="56" class="infoDivs">
+      <!--This is content for navList item 2-->
+        <h2> <span class="emphasis1">Labour 5:</span> <span class="emphasis2">Augean Stables</span></h2> 
+        <p> Clean the continual cattle crap. </p>
+        <h2> <span class="emphasis1">Labour 6:</span> <span class="emphasis2">Stymphalian Birds</span></h2> 
+        <p> Defeat the man-eating metal birds.</p>
+      </div>
+
+
+      <div id="78" class="infoDivs">
+      <!--This is content for navList item 3-->
+        <h2> <span class="emphasis1">Labour 7:</span> <span class="emphasis2">Cretan Bull</span></h2> 
+        <p> Catch the crazy cow.</p>
+        <h2> <span class="emphasis1">Labour 8:</span> <span class="emphasis2">Mares of Diomedes</span></h2> 
+        <p> Steal the man-eating, fire-breathing horses.</p>
+      </div>
+
+
+      <div id="910" class="infoDivs">
+      <!--This is content for navList item 4-->
+        <h2> <span class="emphasis1">Labour 9</span> <span class="emphasis2">Belt of Hippolyta</span></h2> 
+        <p> Grab a magical girdle.</p>
+        <h2> <span class="emphasis1">Labour 10:</span> <span class="emphasis2">Cattle of Geryon</span></h2> 
+        <p> Steal cows from a three-bodied giant and a two-headed dog.</p>
+       
+      </div>
+
+
+      <div id="1112" class="infoDivs">
+      <!--This is content for navList item 5-->
+        <h2> <span class="emphasis1">Labour 11:</span> <span class="emphasis2">Golden Apples</span></h2> 
+        <p> Steal some snacks (don't hold the sky).</p>
+        <h2> <span class="emphasis1">Labour 12:</span> <span class="emphasis2">Cerberus</span></h2> 
+        <p> Capture the prison puppy.</p>
+      </div>
+
+
+    </div>
+    <!--This is the end of infoContainer Div-->
+
+  </div>
+  <!--This is the end of the Main Div-->
+
+
+  </body>
+
+</html>

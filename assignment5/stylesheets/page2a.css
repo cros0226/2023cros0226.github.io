@@ -1,0 +1,282 @@
+/*General styling to ensure content matches with rest of website*/
+
+html, body {
+  font-family: "Georgia";
+}
+
+
+
+
+/*Adapted from Assignment 3 (IOA)*/
+
+h1 { /*Only affects the title of the page*/
+  font-size: 35px;
+  margin-top:45px;
+  margin-left:20px;
+}
+
+header p {
+  margin-top: 15px; /*moves paragraph away from title; basically line spacing*/
+
+}
+
+#subtitle {
+  margin-left:20px;
+  font-size: 20px;
+  width: 50%;
+
+}
+
+
+
+
+/*Page Access Buttons adapted from W3 Schools: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3*/
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;   
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.button:hover {background-color: #4caf50}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#buttoncontainer {  /*Adapted from https://coder-coder.com/how-to-center-button-with-html-css*/
+  float:right;
+}
+
+
+
+
+/*Image styling adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_ex_images_card */
+
+div.polaroid {
+  width: 500px; /*Changed to set width rather than relative; couldn't get min-width figured out*/
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+
+
+/*Image button styling adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1*/
+.btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: lightseagreen;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover {background-color: #4caf50}
+
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 25px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+/*General page styling to structure content (personal additions)*/
+
+.textcontainer {
+  margin-left: 50px;
+  margin-right: 20px;
+
+}
+
+.textcontainer p {
+  font-size: 18px;
+}
+
+.textcontainer2 {
+  margin-left:20px;
+  margin-right:50px;
+}
+
+.textcontainer2 p {
+  font-size: 18px;
+}
+
+.heading1option {
+  background-color: lightseagreen;
+  padding: 8px;
+  color: white;
+}
+
+.heading2option {
+  background-color: #4caf50;
+  padding: 5px;
+  color: white;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+.row {
+  display: inline-block;   /*This is what forces divs under one another*/
+}
+
+
+
+
+
+/*Table styling adapted from: https://www.w3schools.com/css/tryit.asp?filename=trycss_table_responsive */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 18px; /*Have to include this since table is separate element? Should also fall under 'text container' style */
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+
+
+
+/*Progress "bar" styling adapted from: https://codepen.io/toddscottik/pen/gOpqapg*/
+
+.indicator{
+  width:100px;
+  height:100px;
+  background-color:white;
+  text-align: center;
+  position: relative;
+  z-index:2;
+  display: inline-block; /*Added to put them side-by-side*/
+  padding: 45px; /*Added to prevent cut-offs if window minimized */
+}
+/* Text inside the control */
+.indicator span {
+    position: absolute;
+    line-height: 100px;
+    font-size:30px;
+    width: 100px;
+    text-align: center;
+    display: block;
+    color: black;
+    z-index: 4;
+}
+
+.value-bar{
+  background-color:lightseagreen;
+  position:absolute;
+  width:80px;
+  height: 80px;
+  border-radius:50%;
+  clip: rect(0px 40px 100px 0px);
+  transform: rotate(189deg);
+  z-index:3;
+}
+.left-half{
+  background-color:gray;
+  position:absolute;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  clip: rect(0px 40px 100px 0px);
+  z-index:3;
+}
+
+.centr{
+  background-color: gray;
+  width:80px;
+  height:80px;
+  border-radius:100%;
+  margin: 10px 10px;
+  position: absolute;
+  z-index:2;
+}
+.centr.over50 .left-half{
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 80px, 80px, 40px);
+   background-color: lightseagreen;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+}
+.centrV{
+  background-color: white;
+  width:70px;
+  position: absolute;
+  height:70px;
+  border-radius:50%;
+  margin: 15px 15px;
+  z-index:3;
+}
+
+/** Progress bar rotation position */
+.p68 .value-bar { transform: rotate(245deg); }
+.p72 .value-bar { transform: rotate(259deg); }
+.p73 .value-bar { transform: rotate(263deg); }
+.p76 .value-bar { transform: rotate(274deg); }
+
+
+#ratings {   /*Added to align with page structure*/
+  min-width: 80%;
+}
+
+
+
+
+
+
+
+
