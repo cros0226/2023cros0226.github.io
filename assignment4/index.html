@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en"> <!--Forgot to add this in for last assignment; good practice to always include-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Standard to include for device optimization-->
+	<link rel="stylesheet" href="stylesheet4.css"> <!--Links to external CSS file-->
+	<script src="javascript4.js"></script> <!--Links to external JS file -->
+	<title> Assignment 4: Temp Conversion </title>
+</head>
+
+
+
+
+<body>
+
+
+<div id="imagecontainer">
+	<div id="image1" class="pics">
+		<img id="hottemp" src="images/hotthermo.jpg" alt="Graphic of a thermometer with red indicator" height="300">
+		<!--Original dimensions 545x850-->
+		<!--Image taken from: https://pixabay.com/vectors/temperature-warm-hot-cold-weather-157127/-->
+	</div>
+
+	<div id="image2" class="pics">
+		<img id="coldtemp" src="images/coldthermo.jpg" alt="Graphic of a thermometer with blue indicator" height="300">
+		<!--Image taken from: https://pixabay.com/vectors/temperature-warm-hot-cold-weather-157127/-->
+	</div>
+
+</div>
+
+
+<div id="main"> <!--Adapted from Codepen: https://codepen.io/CreativeCoder111/pen/bGMOQrJ -->
+
+	<div class="title">
+		<h1 onclick="alertbox();">Temperature Converter</h1> <!--Personal addition instead of error message (number type precludes additional text)-->
+	</div>
+
+
+	<div id="fbox">
+
+		<input type="number" id="fahrenheit" oninput="fahrenheitConversion(this.value)" placeholder="Fahrenheit"> <!--Adapted from https://www.tutorialsandyou.com/javascript/create-a-temperature-converter-165.html-->
+		<span class="icon">&#8457;</span>
+
+	</div>
+
+
+	<div id="cbox">
+
+		<input type="number" id="celsius" oninput="celsiusConversion(this.value)" placeholder="Celsius"> <!--Adapted from https://www.tutorialsandyou.com/javascript/create-a-temperature-converter-165.html-->
+		<span class="icon">&#8451;</span>
+
+	</div>
+
+
+	<div id="kbox">
+
+		<input type="number" id="kelvin" oninput="kelvinConversion(this.value)" placeholder="Kelvin"> <!--Adapted from https://www.tutorialsandyou.com/javascript/create-a-temperature-converter-165.html-->
+		<span class="icon"> &#8490; </span> <!--Checking in validator brings this up as a warning; but this is the code from Kelvin"-->
+
+	</div>
+
+</div> <!--Closes main-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/*Adapted from https://codepen.io/CreativeCoder111/pen/bGMOQrJ unless otherwise indicated */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#imagecontainer {  /*Added this part in myself*/
+  float: left;
+  margin-left: 50px;
+  padding: 80px;
+}
+
+.main{
+    max-width: 450px;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+
+h1{
+    color: #black;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+
+#fbox, #cbox, #kbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: inset;
+    padding: 0 10px;
+}
+
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: #4d5964;
+    color: #fff;
+}
